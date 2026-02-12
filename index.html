@@ -14,18 +14,18 @@
                 <img src="profile.jpg" alt="Professional photo of Lasha Kipshidze" class="avatar">
                 <div class="header-text">
                     <h1>Lasha Kipshidze</h1>
-                    <p class="tagline">Web Developer</p>
+                    <p class="tagline">Full-Stack/Game Developer</p>
                 </div>
             </div>
             
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#code">Code</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,7 +34,7 @@
             <section id="about">
                 <h2>About Me</h2>
                 <p>
-                    I am a junior web developer. I have a deep understanding of both front-end and back-end. I am fluent in the following languages: HTML5, CSS3, JavaScript, Angular, C#, ASP.NET Web API. I have a movie website that I created independently. I work in Visual Studio Code, Visual Studio, MySQL. I am currently learning how to develop games using Unity. I love coding and writing simply, if I have a problem, I try to solve it myself first and then help someone else. I believe that in this constantly evolving field, I should write clean, manageable code and constantly learn new technologies.
+                    Enthusiastic Full-Stack Developer with 2+ years of experience, having developed several applications. I was working on a Movies Website completely solo, handling both front-end and back-end development. I sat down on real movies API and made copy of that site. The movie database API sometimes failed randomly with unclear errors. It was really hard to find what caused these issues since they didn't happen consistently. I spent time reading the API docs and added retry mechanisms with better error handling, which fixed the problem. Now the site handles API failures smoothly and users don't experience interruptions.
                 </p>
             </section>
 
@@ -43,7 +43,7 @@
                 <ul class="contact-list">
                     <li>
                         <strong>Email:</strong> 
-                        <a href="mailto:lasha.kipshidze2008@gmail.com">lasha.kipshidze2008@gmail.com</a>
+                        <a href="/cdn-cgi/l/email-protection#83efe2f0ebe2ade8eaf3f0ebeae7f9e6b1b3b3bbc3e4eee2eaefade0ecee"><span class="__cf_email__" data-cfemail="d9b5b8aab1b8f7b2b0a9aab1b0bda3bcebe9e9e199beb4b8b0b5f7bab6b4">[email&#160;protected]</span></a>
                     </li>
                     <li>
                         <strong>GitHub:</strong> 
@@ -70,6 +70,7 @@
                     <li>Git & GitHub</li>
                     <li>Responsive Web Design</li>
                     <li>ASP.NET Web API</li>
+                    <li>Unity</li>
                 </ul>
             </section>
 
@@ -88,11 +89,9 @@
   };
 }
 
-// Usage example
 const searchInput = document.querySelector('#search');
 const handleSearch = debounce((e) =&gt; {
   console.log('Searching for:', e.target.value);
-  // Perform search operation
 }, 300);
 
 searchInput.addEventListener('input', handleSearch);</code></pre>
@@ -102,10 +101,56 @@ searchInput.addEventListener('input', handleSearch);</code></pre>
                 <h2>Projects</h2>
                 <ul class="projects-list">
                     <li>
-                        <h3>Portfolio Website</h3>
-                        <p>A responsive personal Project showcasing my skills. Interactive movie application using Angular with real-time data.</p>
+                        <h3>Cavea Plus - Movies Website</h3>
+                        <p class="project-type">Academic Project - IT ACADEMY STEP</p>
+                        <p>A movie browsing website I built using Angular. It pulls data from a movie API to show current films and details. The API wasn't always reliable and would randomly fail, so I had to figure out how to handle those errors and retry failed requests. Took some time to get right, but it works smoothly now.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/kipshoo/Cavea-Plus" target="_blank" rel="noopener noreferrer">Cavea Plus (Movies Website)</a>
+                            <a href="https://github.com/kipshoo/Cavea-Plus" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Recipe Sharing - ASP.NET Core API</h3>
+                        <p class="project-type">Academic Project - IT ACADEMY STEP</p>
+                        <p>Built a REST API for sharing recipes using ASP.NET Core. Users can add, edit, and delete recipes. I set up the database myself and added basic user authentication.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ASP.NET Core</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Web API</span>
+                            <span class="tech-tag">Entity Framework</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kipshoo/Reciepe-Sharing-ASP.net-Core-API-Project-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Fuel Station Management System</h3>
+                        <p class="project-type">Academic Project - IT ACADEMY STEP</p>
+                        <p>A console app in C# that simulates running a fuel station. You can handle fuel sales, track inventory, and manage basic customer stuff. Made it to gain experience working with classes and objects</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">Console Application</span>
+                            <span class="tech-tag">.NET</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kipshoo/Fuel-Station-C-Project-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Unity Game Development Projects</h3>
+                        <p class="project-type">Academic Project - IT ACADEMY STEP</p>
+                        <p>Working on different game projects in Unity with C#. Trying out game mechanics, physics, and player controls.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Game Development</span>
+                            <span class="tech-tag">Physics</span>
                         </div>
                     </li>
                 </ul>
@@ -116,7 +161,7 @@ searchInput.addEventListener('input', handleSearch);</code></pre>
                 <div class="education-content">
                     <div class="education-item">
                         <h3>IT ACADEMY STEP GEORGIA</h3>
-                        <p>Full-stack/Game Developer</p>
+                        <p>Full-stack/Game Development</p>
                         <p class="date">2024 - present</p>
                     </div>
                     <div class="education-item">
@@ -137,11 +182,4 @@ searchInput.addEventListener('input', handleSearch);</code></pre>
             </svg>
             kipshoo
         </a>
-        <a href="https://rs.school/" target="_blank" rel="noopener noreferrer" class="rs-school-link">
-            <img src="rs-school-logo.svg" alt="RS School logo" class="rs-logo">
-        </a>
-    </div>
-</footer>
-    </div>
-</body>
-</html>
+        <a href="https://rs.school/" target="_blank" rel="noopener noreferrer" class="rs-
